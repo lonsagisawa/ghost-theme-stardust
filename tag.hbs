@@ -1,5 +1,5 @@
 {{!< default}}
-
+{{#tag}}
 {{#if @blog.cover}}
 <div class="jumbotron" style="background: url('{{@blog.cover}}') center no-repeat; background-size: cover; height: 320px;">
 	<div class="container">
@@ -13,6 +13,7 @@
 	</div>
 </div>
 {{/if}}
+{{/tag}}
 
 <div class="container" style="margin-top: 20px;">
 	{{#foreach posts}}
