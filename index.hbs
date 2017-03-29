@@ -1,0 +1,38 @@
+{{!< default}}
+
+{{#if @blog.cover}}
+<div class="jumbotron" style="background: url('{{@blog.cover}}') center no-repeat; background-size: cover; height: 320px;"></div>
+{{/if}}
+
+
+<div class="container" style="margin-top: 20px;">
+
+	{{#foreach posts}}
+	
+		<div class="row">
+			<div class="col-md-3">
+				<p class="text-right">
+					<small><time datetime="{{date format='YYYY-MM-DD'}}">{{date format='YYYY.MM.DD'}}</time></small>
+				</p>
+				<p class="text-right">
+					<small class="text-muted">#{{tags separator=" #"}}</small>
+				</p>
+			</div>
+			<div class="col-md-9">
+				
+				{{#if image}}
+				<div class="jumbotron" style="background: url('{{image}}') center no-repeat; background-size: cover;">
+					<a href="{{url}}" class="list-article-title">{{title}}</a>
+				</div>
+				{{else}}
+				<div class="jumbotron">
+					<a href="{{url}}" class="list-article-title">{{title}}</a>
+				</div>
+				{{/if}}
+				
+			</div>
+		</div>
+	
+	{{/foreach}}
+	
+</div>

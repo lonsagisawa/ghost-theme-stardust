@@ -1,0 +1,55 @@
+{{!< default}}
+
+{{#post}}
+
+{{#if image}}
+<div class="eyecatch">
+	<img class="img-responsive eyecatch" src="{{image}}">
+</div>
+{{/if}}}
+
+<div class="container">
+	<div class="page-header">
+		<h1 class="text-center">Article title 記事のタイトル</h1>
+	</div>
+</div>
+
+
+
+<div class="container">
+
+	<div class="row">
+		<div class="col-md-3">
+			<p class="text-right">
+				<small><time datetime="{{date format='YYYY-MM-DD'}}">{{date format='YYYY.MM.DD'}}</time></small>
+			</p>
+			<p class="text-right">
+				<small class="text-muted">#{{tags separator=" #"}}</small>
+			</p>
+		</div>
+		<article class="col-md-6">
+			{{content}}
+		</article>
+		<div class="col-md-3"></div>
+	</div>
+	<div class="row" style="margin-top: 20px;">
+		<div class="col-md-6">
+			{{#prev_post}}
+				<p class="text-muted text-right">前の記事</p>
+				<p class="text-right">
+					<a href="{{url}}">{{title}}</a>
+				</p>
+			{{/prev_post}}
+		</div>
+		<div class="col-md-6">
+			{{#next_post}}
+				<p class="text-muted text-left">次の記事</p>
+				<p class="text-left">
+					<a href="{{url}}">{{title}}</a>
+				</p>
+			{{/next_post}}
+		</div>
+	</div>
+</div>
+
+{{/post}}

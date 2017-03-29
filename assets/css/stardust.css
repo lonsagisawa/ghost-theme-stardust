@@ -1,0 +1,34 @@
+img {
+	width: 100%;
+}
+
+.eyecatch {
+	width: auto;
+	max-height: 400px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #191A17;
+}
+
+.navbar-static-top {
+	margin-bottom: 0;
+}
+
+.list-article-title {
+	font-weight: 300 !important;
+	text-shadow: 0 0 4px #000,
+		0 0 8px #000,
+		0 0 16px #000;
+	color: white;
+	font-size: 22px;
+}
+
+a .list-article-title:hover {
+	color: white;
+	text-decoration: underline;
+}
+
+.jumbotron {
+	padding-top: 80px;
+	padding-bottom: 80px;
+}
