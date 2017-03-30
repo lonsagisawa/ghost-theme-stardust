@@ -1,0 +1,15 @@
+<nav>
+	<ul class="pager">
+		{{#if prev}}
+			<li><a href="{{page_url prev}}">&larr; 新しい投稿</a></li>
+		{{else}}
+			<li class="disabled"><a href="#">&larr; 新しい投稿</a></li>
+		{{/if}}
+		<span style="margin-left: 10px; margin-right: 10px;">{{page}}/{{pages}}</span>
+		{{#if next}}
+			<li><a href="{{page_url next}}">古い投稿 &rarr;</a></li>
+		{{else}}
+			<li class="disabled"><a href="#">古い投稿 &rarr;</a></li>
+		{{/if}}
+	</ul>
+</nav>
