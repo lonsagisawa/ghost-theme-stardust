@@ -16,13 +16,4 @@ This is theme for my personal blog written in Japanese, so it'll be working demo
 * Blog cover and Post cover compatible.
 * No additional JS other than Bootstrap, and JQuery.
 * Responsive.
-
-# Customizing
-
-## Modifying navbar
-Open partials/navbar.hbs. 
-Adding entry like this.
-
-```
-<li><a href="https://github.com/mlny">GitHub</a></li>
-```
+* Navigation compatible.
