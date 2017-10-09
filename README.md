@@ -1,3 +1,5 @@
+**Not maintained anymore. NOT TESTED ON 1.x OR ABOVE!**
+
 # ghost-theme-stardust
 Yet another [Ghost](https://ghost.org) theme using Bootstrap, optimized for Japanese.
 
