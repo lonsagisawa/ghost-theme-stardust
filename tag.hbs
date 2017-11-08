@@ -1,7 +1,7 @@
 {{!< default}}
 {{#tag}}
-{{#if @blog.cover}}
-<div class="jumbotron" style="background: url('{{@blog.cover}}') center no-repeat; background-size: cover; height: 320px;">
+{{#if @blog.cover_image}}
+<div class="jumbotron" style="background: url('{{@blog.cover_image}}') center no-repeat; background-size: cover; height: 320px;">
 	<div class="container">
 		<p class="list-article-title">#{{name}}</p>
 	</div>
@@ -27,8 +27,8 @@
 			</p>
 		</div>
 		<div class="col-md-9">
-			{{#if image}}
-			<div class="jumbotron" style="background: url('{{image}}') center no-repeat; background-size: cover;">
+			{{#if feature_image}}
+			<div class="jumbotron" style="background: url('{{img_url feature_image}}') center no-repeat; background-size: cover;">
 				<a href="{{url}}" class="list-article-title">{{title}}</a>
 			</div>
 			{{else}}
